@@ -1,17 +1,21 @@
 * {
     box-sizing: border-box;
 }
+body {
+    position: relative;
+}
 
 .container {
-    width: 80%;
+    width: 60%;
     margin: auto;
 }
+/*********************GAMEBOARD***************************/
 th {
     width: 50%;
 }
 table {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
 }
 tr {
     border: 1px solid #000;
@@ -23,6 +27,41 @@ tr:nth-of-type(even) td:nth-of-type(odd){
     background-color: #000;
 }
 td {
-    width: 12.5%;
+    width: 12vh;
     height: 12vh;
+}
+/***************************Players Info*********************/
+.players {
+    position: absolute;
+}
+.player1 {
+    left: 2%;
+    top: 40%;
+}
+.player2 {
+    right: 2%;
+    top: 40%;
+}
+.starting-cells {
+    text-align: center;
+    vertical-align: middle;
+}
+.starting-cells span {
+    cursor: pointer;
+}
+.firstPlayerPiece {
+    width: 70%;
+    height: 70%;
+    background-color: red;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.secondPlayerPiece {
+    width: 70%;
+    height: 70%;
+    background-color: blue;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #fff;
 }
